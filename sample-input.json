@@ -1,0 +1,46 @@
+{
+  "tolerance_s": 2,
+  "snapshot_times_s": [
+    0,
+    2,
+    5,
+    8
+  ],
+  "readings": [
+    {
+      "asset_id": "robot-1",
+      "sensor_id": "temperature",
+      "time_s": 1,
+      "sequence": 1,
+      "value": 32
+    },
+    {
+      "asset_id": "robot-1",
+      "sensor_id": "temperature",
+      "time_s": 4,
+      "sequence": 2,
+      "value": 34
+    },
+    {
+      "asset_id": "robot-1",
+      "sensor_id": "temperature",
+      "time_s": 4,
+      "sequence": 3,
+      "value": 34.5
+    },
+    {
+      "asset_id": "robot-1",
+      "sensor_id": "current",
+      "time_s": 2,
+      "sequence": 1,
+      "value": 1.2
+    },
+    {
+      "asset_id": "robot-1",
+      "sensor_id": "current",
+      "time_s": 7,
+      "sequence": 2,
+      "value": 1.5
+    }
+  ]
+}

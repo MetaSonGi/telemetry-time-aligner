@@ -1,0 +1,92 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>센서 시간 정렬기</title><style>body{font:16px/1.6 system-ui;max-width:1000px;margin:32px auto;padding:20px;background:#101b2b;color:#ecf4ff}pre{padding:24px;background:#192b40;border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere}h1{color:#80e4c5}</style><h1>센서 시간 정렬기</h1><p>오프라인 샘플 계산 결과 · 실물 장비 연결 없음</p><pre>{
+  &quot;policy&quot;: &quot;backward_asof_no_future&quot;,
+  &quot;duplicate_timestamps&quot;: 1,
+  &quot;snapshots&quot;: [
+    {
+      &quot;time_s&quot;: 0,
+      &quot;values&quot;: [
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;current&quot;,
+          &quot;status&quot;: &quot;missing&quot;,
+          &quot;value&quot;: null
+        },
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;temperature&quot;,
+          &quot;status&quot;: &quot;missing&quot;,
+          &quot;value&quot;: null
+        }
+      ]
+    },
+    {
+      &quot;time_s&quot;: 2,
+      &quot;values&quot;: [
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;current&quot;,
+          &quot;status&quot;: &quot;fresh&quot;,
+          &quot;value&quot;: 1.2,
+          &quot;source_time_s&quot;: 2,
+          &quot;age_s&quot;: 0,
+          &quot;sequence&quot;: 1
+        },
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;temperature&quot;,
+          &quot;status&quot;: &quot;fresh&quot;,
+          &quot;value&quot;: 32,
+          &quot;source_time_s&quot;: 1,
+          &quot;age_s&quot;: 1,
+          &quot;sequence&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;time_s&quot;: 5,
+      &quot;values&quot;: [
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;current&quot;,
+          &quot;status&quot;: &quot;stale&quot;,
+          &quot;value&quot;: null,
+          &quot;source_time_s&quot;: 2,
+          &quot;age_s&quot;: 3,
+          &quot;sequence&quot;: 1
+        },
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;temperature&quot;,
+          &quot;status&quot;: &quot;fresh&quot;,
+          &quot;value&quot;: 34.5,
+          &quot;source_time_s&quot;: 4,
+          &quot;age_s&quot;: 1,
+          &quot;sequence&quot;: 3
+        }
+      ]
+    },
+    {
+      &quot;time_s&quot;: 8,
+      &quot;values&quot;: [
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;current&quot;,
+          &quot;status&quot;: &quot;fresh&quot;,
+          &quot;value&quot;: 1.5,
+          &quot;source_time_s&quot;: 7,
+          &quot;age_s&quot;: 1,
+          &quot;sequence&quot;: 2
+        },
+        {
+          &quot;asset_id&quot;: &quot;robot-1&quot;,
+          &quot;sensor_id&quot;: &quot;temperature&quot;,
+          &quot;status&quot;: &quot;stale&quot;,
+          &quot;value&quot;: null,
+          &quot;source_time_s&quot;: 4,
+          &quot;age_s&quot;: 4,
+          &quot;sequence&quot;: 3
+        }
+      ]
+    }
+  ]
+}</pre></html>

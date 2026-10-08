@@ -1,0 +1,92 @@
+{
+  "policy": "backward_asof_no_future",
+  "duplicate_timestamps": 1,
+  "snapshots": [
+    {
+      "time_s": 0,
+      "values": [
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "current",
+          "status": "missing",
+          "value": null
+        },
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "temperature",
+          "status": "missing",
+          "value": null
+        }
+      ]
+    },
+    {
+      "time_s": 2,
+      "values": [
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "current",
+          "status": "fresh",
+          "value": 1.2,
+          "source_time_s": 2,
+          "age_s": 0,
+          "sequence": 1
+        },
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "temperature",
+          "status": "fresh",
+          "value": 32,
+          "source_time_s": 1,
+          "age_s": 1,
+          "sequence": 1
+        }
+      ]
+    },
+    {
+      "time_s": 5,
+      "values": [
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "current",
+          "status": "stale",
+          "value": null,
+          "source_time_s": 2,
+          "age_s": 3,
+          "sequence": 1
+        },
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "temperature",
+          "status": "fresh",
+          "value": 34.5,
+          "source_time_s": 4,
+          "age_s": 1,
+          "sequence": 3
+        }
+      ]
+    },
+    {
+      "time_s": 8,
+      "values": [
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "current",
+          "status": "fresh",
+          "value": 1.5,
+          "source_time_s": 7,
+          "age_s": 1,
+          "sequence": 2
+        },
+        {
+          "asset_id": "robot-1",
+          "sensor_id": "temperature",
+          "status": "stale",
+          "value": null,
+          "source_time_s": 4,
+          "age_s": 4,
+          "sequence": 3
+        }
+      ]
+    }
+  ]
+}
